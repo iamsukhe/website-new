@@ -95,12 +95,14 @@ box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
 /* Home container */
 
 .firstSection{
-    height: 75vh;
-    /* background-color: aquamarine; */
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.75) url("images/bag2.jpg");
+    background-blend-mode: darken ;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: cornflowerblue; */
+    color: white;
 }
 
 .home-container{
@@ -149,7 +151,7 @@ box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
         height: 85vh;
     }
     .home-container{
-        margin-left: 20%;
+        margin-left: 15%;
         flex-direction: column;
     }
     .heading{
@@ -159,11 +161,11 @@ box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
     .logo-section{
         order: 1;
         position: relative;
-        right: 6%;
+        right: 9%;
     }
     .logo-section img{
-        width: 90%;
-        height: 170px;
+        width: 100%;
+        height: 155px;
 
     }
 }

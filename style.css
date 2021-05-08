@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: all 1s ease-in;
+}
+.toggle-icon{
+    display: none;
+    color: ivory;
+}
+.main-container{
+    display: flex;
+    padding: 15px;
+    background-color:#021e49;
+    align-items: center;
+}
+
+.nav-search{
+    position: absolute;
+    right: 1%;
+    /* width: 20%; */
+}
+
+.nav-search input{
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    /* width: 90%; */
+}
+.nav-search input:focus{
+    outline: none;
+}
+.nav-search i{
+    position: absolute;
+    right: 3px;
+    bottom: 5px;
+}
+
+.nav-search input:hover{
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
+box-shadow: 0px 0px 11px 1px rgba(255, 255, 255, 0.75);
+}
+
+.navbar{
+    margin: 2px 16px 2px 2px;
+    font-size: 18px;
+}
+
+.nav-brand{
+    margin-top: 0px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.navbar a:hover{
+    color: rgb(185, 184, 197);
+}
+
+@media (max-width:900px){
+    .main-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbarToggle{
+        display: none;
+    }
+    .nav{
+        padding: 14px 2px 4px 1px;
+    }
+    .toggle-icon{
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        right: -2%;
+        top: 16px;;
+    }
+    .nav-search{
+        right: 6%;
+    }
+   
+}
+
+
+/* Home container */
+
+.firstSection{
+    height: 75vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    height: 90%;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+
+.logo-section{
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    width: 82%;
+}
+
+.logo-section img{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.home-h1{
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive
+}
+
+.home-para{
+    line-height: 1.5;
+}
+
+@media (max-width:900px){
+    .firstSection{
+        height: 85vh;
+    }
+    .home-container{
+        margin-left: 20%;
+        flex-direction: column;
+    }
+    .heading{
+        margin: auto;
+        order: 2;
+    }
+    .logo-section{
+        order: 1;
+        position: relative;
+        right: 6%;
+    }
+    .logo-section img{
+        width: 90%;
+        height: 170px;
+
+    }
+}
